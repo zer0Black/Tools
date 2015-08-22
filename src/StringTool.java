@@ -9,20 +9,21 @@ import java.util.Random;
 import sun.rmi.runtime.Log;
 
 /**
- * <li>说明 字符串工具类
- * <li>作者 zer0
- * <li>创建日期 2015-7-01
+ *  字符串工具类
+ * @author zer0
+ * @version 1.0
+ * @date 2015-7-01
  */
 
 public class StringTool {
 
 	/**
-	 * <li>方法 isBlank
-	 * <li>@param str
-	 * <li>返回类型 boolean
-	 * <li>说明 判断字符串是否为空
-	 * <li>作者 zer0
-	 * <li>创建日期 2015-7-01
+	 * 判断字符串是否为空
+	 * @param str
+	 * @return boolean
+	 * @author zer0
+	 * @version 1.0
+	 *	@date 2015-7-01
 	 */
 	public static boolean isBlank(String str){
 		if(str==null){
@@ -43,12 +44,12 @@ public class StringTool {
 	}
 	
 	/**
-	 * <li>方法 stringToByte
-	 * <li>@param string
-	 * <li>返回类型 byte[]
-	 * <li>说明 将字符串转换为byte数组
-	 * <li>作者 zer0
-	 * <li>创建日期 2015-7-01
+	 * 将字符串转换为byte数组
+	 * @param string
+	 * @return byte[]
+	 * @author  zer0
+	 * @version 1.0
+	 * @date 2015-7-01
 	 */
 	public static byte[] stringToByte(String string) {
 		if (string == null) {
@@ -65,12 +66,13 @@ public class StringTool {
 	}
 	
 	/**
-	 * <li>方法 getRandomString
-	 * <li>@param length
-	 * <li>返回类型 length
-	 * <li>说明 随机生成字符串
-	 * <li>作者 zer0
-	 * <li>创建日期 2015-7-01
+	 * 随机生成字符串
+	 * @param length
+	 * @return String类型</br>
+	 * 随机字符串
+	 * @author zer0
+	 * @version 1.0
+	 * @date 2015-7-01
 	 */
 	 public static String getRandomString(int length){
 	     String str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -82,5 +84,4 @@ public class StringTool {
 	     }
 	     return sb.toString();
 	 }
-	
 }
